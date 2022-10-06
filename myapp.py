@@ -23,7 +23,7 @@ with tab1:
     with col2:
         st.write("Welcome to my website. This is a place where you can get to know a little bit more about who this Emily Herman girl is. I am gonna tell you all kinds of things about what makes her great, the things she loves to do, and the amazing people in her life. Thanks for stoping by!")
     with col1:
-        st.image("/Users/matthewwillenbring/Desktop/Screen Shot 2022-10-05 at 8.28.15 AM.png")
+        st.image("Screen Shot 2022-10-05 at 8.28.15 AM.png")
 
 with tab2:
    st.header("My Best Attributes")

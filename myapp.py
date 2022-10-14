@@ -111,7 +111,7 @@ with tab4:
    if yes:
     st.header(diff.days)
     st.image("https://media.giphy.com/media/26BRL7YrutHKsVtJK/giphy.gif", width=800)
-    st.baloons()
+    st.balloons()
     st.snow()
 
 

@@ -57,7 +57,7 @@ with tab3:
    filter = filter[filter['Price'].isin(deck)]
 
    if st.button('Choose Where I should eat!'):
-        st.wrtite(filter.sample())
+        st.write(filter.sample())
         
    if st.button('Show me all my options!'):
         st.write(filter)

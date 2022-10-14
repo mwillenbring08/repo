@@ -32,7 +32,7 @@ with tab2:
 
 with tab3:
    st.header("Hungry Time")
-   df = pd.read_excel('Restaurants.xlxs')
+   df = pd.read_excel('Restaurants.xlsx')
    
    
     

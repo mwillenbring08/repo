@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 from datetime import date
 
 today = date.today()
@@ -30,8 +31,11 @@ with tab2:
    st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
 
 with tab3:
-   st.header("What is fun")
-   st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
+   st.header("Hungry Time")
+   df = pd.read_excel('Restaurants.xlxs')
+   
+   
+    
 
 with quiz:
     st.header("Put your knowledge of Emily to the test! Are you a fake friend???")

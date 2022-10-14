@@ -55,9 +55,11 @@ with tab3:
    filter = filter[filter['Location'].isin(area)]
    filter = filter[filter['Price'].isin(deck)]
 
-                
-
-   st.write(filter)
+   if st.button('Choose Where I should eat!'):
+        st.wrtite(filter.sample())
+        
+   if st.button('Show me all my options!'):
+        st.write(filter)
 
     
 

@@ -47,7 +47,7 @@ with tab3:
    if price_low == '$$' and price_high == '$$$':
         deck = ['$$','$$$']
    if price_low == '$$' and price_high == '$$$$':
-        deck = ['$$','$$$','$$$$]
+        deck = ['$$','$$$','$$$$']
    if price_low == '$$$' and price_high == '$$$$':
         deck = ['$$$$','$$$$']
     

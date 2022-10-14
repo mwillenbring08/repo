@@ -49,7 +49,7 @@ with tab3:
    if price_low == '$$' and price_high == '$$$$':
         deck = ['$$','$$$','$$$$']
    if price_low == '$$$' and price_high == '$$$$':
-        deck = ['$$$$','$$$$']
+        deck = ['$$$','$$$$']
     
    filter = df[df['Genre'].isin(genre)] 
    filter = filter[filter['Location'].isin(area)]

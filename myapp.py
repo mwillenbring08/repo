@@ -38,7 +38,25 @@ with tab3:
    area = st.multiselect('Location',options = ['North','Central','Downtown','South','East','West'], default = ['North','Central','Downtown','South','East','West'])
    price_low, price_high = st.select_slider('Price',options = ['$','$$','$$$','$$$$'], value = ('$','$$$$'))
 
-   filter = df[df['Genre'] == genre] 
+   if price_low == '$' and price_high == '$$':
+        deck = ['$','$$']
+   if price_low == '$' and price_high == '$$$':
+        deck = ['$','$$','$$$']
+   if price_low == '$' and price_high == '$$$$':
+        deck = ['$','$$','$$$','$$$$']
+   if price_low == '$$' and price_high == '$$$':
+        deck = ['$$','$$$']
+   if price_low == '$$' and price_high == '$$$$':
+        deck = ['$$','$$$','$$$$]
+   if price_low == '$$$' and price_high == '$$$$':
+        deck = ['$$$$','$$$$']
+    
+   filter = df[df['Genre'].isin(genre)] 
+   filter = filter[filter['Location'].isin(area)]
+   filter = filter[filter['Price'].isin(deck)]
+
+                
+
    st.write(filter)
 
     

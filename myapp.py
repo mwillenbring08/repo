@@ -36,7 +36,10 @@ with tab3:
    df = pd.read_excel('Restaurants.xlsx')
    genre = st.multiselect('Cuisine',options = ['American','Asian','Breakfast','Tacos','Mexican','Italian', 'Pizza', 'Misc'], default = ['American','Asian','Breakfast','Tacos','Mexican','Italian', 'Pizza', 'Misc'])
    area = st.multiselect('Location',options = ['North','Central','Downtown','South','East','West'], default = ['North','Central','Downtown','South','East','West'])
-   price = st.select_slider('Price',options = ['$','$$','$$$','$$$$'], value = ('$','$$'))
+   price_low, price_high = st.select_slider('Price',options = ['$','$$','$$$','$$$$'], value = ('$','$$$$'))
+
+   filter = df[df['Genre'] = genre] 
+   st.write(filter)
 
     
 

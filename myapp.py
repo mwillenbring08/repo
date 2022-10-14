@@ -34,8 +34,10 @@ with tab2:
 with tab3:
    st.header("Hungry Time")
    df = pd.read_excel('Restaurants.xlsx')
-   st.multiselect('Cuisine',options = ['American','Asian','Breakfast','Tacos','Mexican','Italian', 'Pizza', 'Misc'], default = ['American','Asian','Breakfast','Tacos','Mexican','Italian', 'Pizza', 'Misc'])
-   
+   genre = st.multiselect('Cuisine',options = ['American','Asian','Breakfast','Tacos','Mexican','Italian', 'Pizza', 'Misc'], default = ['American','Asian','Breakfast','Tacos','Mexican','Italian', 'Pizza', 'Misc'])
+   area = st.multiselec('Location',options = ['North','Central','Downtown','South','East','West'], default = ['North','Central','Downtown','South','East','West'])
+   price = st.select_slider('Price',options = ['$','$$','$$$','$$$$'], value = ['North','Central','Downtown','South','East','West'])
+
     
 
 with quiz:

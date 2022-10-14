@@ -57,11 +57,16 @@ with tab3:
    filter = filter[filter['Price'].isin(deck)]
 
    if st.button('Choose Where I should eat!'):
-        st.write(filter.sample())
+        try:
+            st.write(filter.sample())
+        except:
+            st.write('Couldn\'t find a reastaurant in that criteria, try adjusting those filters!!')
         
    if st.button('Show me all my options!'):
-        st.write(filter)
-
+        try:
+            st.write(filter)
+        except:
+            st.write('Couldn\'t find a reastaurant in that criteria, try adjusting those filters!!')
     
 
 with quiz:

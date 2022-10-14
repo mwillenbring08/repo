@@ -9,7 +9,7 @@ diff = born - today
 
 
 st.set_page_config(page_icon='🎂',  layout="centered", initial_sidebar_state="auto", menu_items=None)
-st.markdown("<h1 style='text-align: center; color: black;'>EMILY'S WEBSITE OF FUN!</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: black;'>EMILY'S WEBSITE OF FUN!</h1>", unsafe_allow_html=True)
 #st.set_page_config(page_title = 'Happy Birthday Emily Christine Herman!', page_icon='🎂',  layout="centered", initial_sidebar_state="auto", menu_items=None)
 st.title('Emily\'s Website of Fun')
 st.image('IMG_2330.JPG')

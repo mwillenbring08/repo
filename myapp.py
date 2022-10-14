@@ -15,7 +15,7 @@ st.markdown("<h1 style='text-align: center; color: black;'>EMILY'S WEBSITE OF FU
 st.image('IMG_2330.JPG')
 
 
-tab1, tab2, tab3, quiz, tab4, tab5= st.tabs(["Welcome", "Why I am Awesome", "My Favorite Things to Do",  "Emily Quiz", "Next Birthday", "A Message from our Sponser"])
+tab1, tab2, tab3, quiz, tab4, tab5= st.tabs(["Welcome", "Why I am Awesome", "FOOOD",  "Emily Quiz", "Next Birthday", "A Message from our Sponser"])
 
 with tab1:
     st.balloons()
@@ -34,7 +34,7 @@ with tab2:
 with tab3:
    st.header("Hungry Time")
    df = pd.read_excel('Restaurants.xlsx')
-   
+   st.multiselect('Cuisine',options = ['American','Asian','Breakfast','Tacos','Mexican','Italian', 'Pizza', 'Misc'], default = ['American','Asian','Breakfast','Tacos','Mexican','Italian', 'Pizza', 'Misc'])
    
     
 
@@ -51,7 +51,7 @@ with quiz:
         cal = st.radio("What is my favorite calender?",('Paper','Google','Outlook','Apple'))
         
         st.form_submit_button('Check my answers!')
-        key = ['Rom Com','Younger','Maldives','Church','Cava','Google']
+        key = ['Rom Com','Younger','Maldives','Church','Honest Mary\'s','Google']
         ans = [movie,twin,travel,matthew,bowl,cal]
         total = 0
         for i in range(len(ans)):

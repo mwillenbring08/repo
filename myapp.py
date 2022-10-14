@@ -37,6 +37,7 @@ with tab3:
    genre = st.multiselect('Cuisine',options = ['American','Asian','Breakfast','Tacos','Mexican','Italian', 'Pizza', 'Misc'], default = ['American','Asian','Breakfast','Tacos','Mexican','Italian', 'Pizza', 'Misc'])
    area = st.multiselect('Location',options = ['North','Central','Downtown','South','East','West'], default = ['North','Central','Downtown','South','East','West'])
    price_low, price_high = st.select_slider('Price',options = ['$','$$','$$$','$$$$'], value = ('$','$$$$'))
+   deck = ['$','$$','$$$','$$$$']
 
    if price_low == '$' and price_high == '$$':
         deck = ['$','$$']

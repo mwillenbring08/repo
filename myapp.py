@@ -33,6 +33,7 @@ with tab2:
 
 with tab3:
    st.header("Hungry Time")
+   st.subheader("If you are anything like Emily, or Matthew, you are always hungry! Sometimes it is hard to know where to eat though! \nHere is a list of some of Emily and Matthew\'s favorite places to eat. Hope this helps out on the \'idk what I want but not that\' times')
    df = pd.read_excel('Restaurants.xlsx')
    genre = st.multiselect('Cuisine',options = ['American','Asian','Breakfast','Tacos','Mexican','Italian', 'Pizza', 'Misc'], default = ['American','Asian','Breakfast','Tacos','Mexican','Italian', 'Pizza', 'Misc'])
    area = st.multiselect('Location',options = ['North','Central','Downtown','South','East','West'], default = ['North','Central','Downtown','South','East','West'])

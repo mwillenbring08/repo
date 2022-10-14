@@ -38,7 +38,7 @@ with tab3:
    area = st.multiselect('Location',options = ['North','Central','Downtown','South','East','West'], default = ['North','Central','Downtown','South','East','West'])
    price_low, price_high = st.select_slider('Price',options = ['$','$$','$$$','$$$$'], value = ('$','$$$$'))
 
-   filter = df[df['Genre'] = genre] 
+   filter = df[df['Genre'] == genre] 
    st.write(filter)
 
     

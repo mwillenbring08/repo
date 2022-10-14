@@ -4,7 +4,7 @@ from datetime import date
 import openpyxl
 
 today = date.today()
-born = date(2023,10,19)
+born = date(2022,10,19)
 diff = born - today
 
 

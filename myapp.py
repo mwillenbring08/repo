@@ -6,8 +6,7 @@ import openpyxl
 today = date.today()
 born = date(2022,10,19)
 diff = born - today
-if diff < 0:
-    diff = 365 + diff
+
 
 st.set_page_config(page_icon='🎂',  layout="centered", initial_sidebar_state="auto", menu_items=None)
 #st.markdown("<h1 style='text-align: center; color: black;'>EMILY'S WEBSITE OF FUN!</h1>", unsafe_allow_html=True)
@@ -112,7 +111,8 @@ with tab4:
    if yes:
     st.header(diff.days)
     st.image("https://media.giphy.com/media/26BRL7YrutHKsVtJK/giphy.gif", width=800)
-
+    st.baloons()
+    st.snow()
 
 
 

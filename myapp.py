@@ -121,7 +121,7 @@ with tab2:
    if go:
         num = random.randint(0,len(pictures))
         st.image(pictures[num])
-        st.wrtite(comment[num])
+        st.write(comment[num])
     
 with tab5:
     st.header("A True Thank You")

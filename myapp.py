@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from datetime import date
 import openpyxl
+import random
 
 today = date.today()
 born = date(2022,10,19)
@@ -15,7 +16,7 @@ st.title('Emily\'s Website of Fun')
 st.image('IMG_2330.JPG')
 
 
-tab1, tab2, tab3, quiz, tab4, tab5= st.tabs(["Welcome", "Why I am Awesome", "FOOOD",  "Emily Quiz", "Next Birthday", "A Message from our Sponser"])
+tab1, tab3, quiz, tab4, tab2, tab5= st.tabs(["Welcome", "FOOOD",  "Emily Quiz", "Next Birthday", "Memory Lane", "A Message from our Sponser"])
 
 with tab1:
     st.balloons()
@@ -28,7 +29,7 @@ with tab1:
         st.image("Screen Shot 2022-10-05 at 8.28.15 AM.png")
 
 with tab2:
-   st.header("My Best Attributes")
+   st.header("Some of my Favorite Pictures")
    st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
 
 with tab3:
@@ -116,6 +117,16 @@ with tab4:
     st.snow()
 
 
-
+with tab2:
+   st.header("Some of my Favorite Pictures, People and Things to do!")
+   go = st.button('Show me something')
+   pictures = ['Car.JPG','Swim.jpeg','3bf.JPG','pool.JPG','matteo.JPEG','bday.PNG','truck.JPG','boat.JPG','mask.JPG','tbird.JPG','barge.jpeg','len.jpeg','neil.jpeg','3b.jpg','young.jpg','cousin.JPEG','pink.JPEG','golf.JPEG']
+   comment = ['A bunch of mechanics:)','Big boi matthew swimming','THE 3 BEST FRIENDS','Hangin out by the pool','Matthew with baby hehe','Music out for matt bday','Roadtripping','Enjoying our time with Kevin','nightmare fuel','In the bird','THE 3 bestest of friends','the beginning hanging at the pool, so awk','papa neil so cute','The 3 bestest of ever friendies','baby matthew','the fam','bloop','where it all began']
+   
+    if go:
+        num = random.randint(0,len(pictures))
+        st.image(pictures[num])
+        st.wrtite(comment[num])
+    
 with tab5:
     st.header("A True Thank You")

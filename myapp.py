@@ -122,7 +122,7 @@ with tab2:
    if go:
         num = random.randint(0,len(pictures)-1)
         with co:
-            st.image(pictures[num])
+            st.image(pictures[num], width = 200)
         with col:
             st.write(comment[num])
     

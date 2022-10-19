@@ -28,10 +28,6 @@ with tab1:
     with col1:
         st.image("Screen Shot 2022-10-05 at 8.28.15 AM.png")
 
-with tab2:
-   st.header("Some of my Favorite Pictures")
-   st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
-
 with tab3:
    st.header("Hungry Time")
    st.subheader("If you are anything like Emily, or Matthew, you are always hungry! Sometimes it is hard to know where to eat though! \nHere is a list of some of Emily and Matthew\'s favorite places to eat. Hope this helps out on the \'idk what I want but not that\' times")

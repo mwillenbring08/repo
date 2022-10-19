@@ -122,7 +122,6 @@ with tab2:
    go = st.button('Show me something')
    pictures = ['Car.JPG','Swim.jpeg','3bf.JPG','pool.JPG','matteo.JPEG','bday.PNG','truck.JPG','boat.JPG','mask.JPG','tbird.JPG','barge.jpeg','len.jpeg','neil.jpeg','3b.jpg','young.jpg','cousin.JPEG','pink.JPEG','golf.JPEG']
    comment = ['A bunch of mechanics:)','Big boi matthew swimming','THE 3 BEST FRIENDS','Hangin out by the pool','Matthew with baby hehe','Music out for matt bday','Roadtripping','Enjoying our time with Kevin','nightmare fuel','In the bird','THE 3 bestest of friends','the beginning hanging at the pool, so awk','papa neil so cute','The 3 bestest of ever friendies','baby matthew','the fam','bloop','where it all began']
-   
    if go:
         num = random.randint(0,len(pictures))
         st.image(pictures[num])

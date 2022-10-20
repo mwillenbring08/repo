@@ -107,7 +107,10 @@ with tab4:
    st.header("Days till Emily's Next Birthday:")
    yes = st.button("Calculate")
    if yes:
-    st.header(diff.days)
+    if diff.days < 0:
+         st.header(365 + diff.days)
+    else:
+         st.header(diff.days)
     st.image("https://media.giphy.com/media/26BRL7YrutHKsVtJK/giphy.gif", width=800)
     st.balloons()
     st.snow()

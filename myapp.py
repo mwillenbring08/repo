@@ -128,7 +128,7 @@ with tab2:
     
 with tab5:
     st.header("A True Thank You")
-    pass = st.text_input('Password:')
+    password = st.text_input('Password:')
     
-    if pass == 'beloved':
-        st.video('final.mp4')
+    if password == 'beloved':
+        st.video('final1.mp4')

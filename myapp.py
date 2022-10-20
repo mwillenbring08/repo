@@ -75,7 +75,7 @@ with quiz:
         movie = st.radio('What is my favorite genre of TV/Movies?',('Reality TV','Rom Com','True Crime','Horror','Fantasy'))
         twin = st.radio("Am I the older or younger twin?",('Older','Younger','We were birthed at the exact same time'))
         travel = st.radio("If I could travel anywhere in the world, where would I go?", ('Spain','Houston','Australia','Maldives','Dubai'))
-        matthew = st.radio("Where did I meet the love of my life?", ("Target", "Downtown", "Boat","Church","Class"))
+        matthew = st.radio("Where did I meet Matthew?", ("Target", "Downtown", "Boat","Church","Class"))
         bowl = st.radio("What is my favorite bowl place?",('Cabo Bob\'s','Honest Mary\'s', 'Cava','Chipotle'))
         cal = st.radio("What is my favorite calender?",('Paper','Google','Outlook','Apple'))
         
